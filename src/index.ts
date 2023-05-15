@@ -6,7 +6,7 @@ cron.schedule(`*/1 * * * *`, async () => {
 
   console.log(`[${date.toLocaleString()}] launch cron batch...`);
 
-  await fetch('https://localhost:80/remind-batch', {
+  await fetch('http://localhost/remind-batch', {
     method: 'GET',
     headers: {
       key: batchApiKey,
