@@ -6,7 +6,7 @@ cron.schedule(`*/1 * * * *`, async () => {
 
   console.log(`[${date.toLocaleString()}] launch cron batch...`);
 
-  await fetch('http://localhost/remind-batch', {
+  await fetch('https://js-discordtaskbot.up.railway.app/remind-batch', {
     method: 'GET',
     headers: {
       key: batchApiKey,
